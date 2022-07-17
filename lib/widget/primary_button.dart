@@ -1,3 +1,7 @@
+// All Rights Reserved (ARR)
+// Copyright (c) 2022 NotSuitable Group LTD
+// Created by DanikingRD https://github.com/DanikingRD
+
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:mysub/constant/colors.dart';
@@ -40,7 +44,7 @@ class PrimaryButton extends StatelessWidget {
       onPressed: onPressed,
       style: ButtonStyle(
         splashFactory: NoSplash.splashFactory,
-        overlayColor: MaterialStateProperty.all(outlined ? Colors.grey.shade300 : Colors.black26),
+        overlayColor: MaterialStateProperty.all(outlined ? Colors.grey.shade300 : Colors.black45),
         backgroundColor: MaterialStateProperty.all(
           outlined ? Colors.white : bgColor,
         ),

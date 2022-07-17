@@ -1,5 +1,10 @@
+// All Rights Reserved (ARR)
+// Copyright (c) 2022 NotSuitable Group LTD
+// Created by DanikingRD https://github.com/DanikingRD
+
 import 'package:flutter/material.dart';
 import 'package:mysub/constant/colors.dart';
+import 'package:mysub/constant/spacing.dart';
 import 'package:mysub/widget/primary_button.dart';
 import 'package:mysub/widget/primary_text_field.dart';
 
@@ -32,25 +37,18 @@ class _LoginScreenState extends State<LoginScreen> {
               height: 35,
             ),
             Text('Username / Email', style: theme.textTheme.bodySmall,),
-            const SizedBox(height: 6,),
+            kTextFieldLabelMargin,
             PrimaryTextField(
               controller: TextEditingController(),
-
             ),
-            const SizedBox(
-              height: 45,
-            ),
-            const SizedBox(height: 6,),
-
+            kMultiTextFieldGaps,
+            kTextFieldLabelMargin,
             Text('Password', style: theme.textTheme.bodySmall),
             PrimaryTextField(
               controller: TextEditingController(),
               obscureText: true,
             ),
-            const SizedBox(
-              height: 50,
-            ),
-
+            kMultiTextFieldGaps,
             PrimaryButton(onPressed: () {}, title: 'Sign in'),
             const SizedBox(height: 10,),
             Row(
@@ -88,9 +86,9 @@ class _LoginScreenState extends State<LoginScreen> {
                   "Don't have an account?",
                   style: theme.textTheme.bodySmall,
                 ),
-                Spacer(),
+                const Spacer(),
                 Text(
-                  "Sign up!",
+                  "Sign up",
                   style: theme.textTheme.bodySmall!.copyWith(
                       color: kPrimaryColor, fontWeight: FontWeight.bold),
                 )

@@ -5,7 +5,10 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:mysub/constant/colors.dart';
+import 'package:mysub/default_scroll_behaviour.dart';
 import 'package:mysub/screen/login_screen.dart';
+import 'package:mysub/screen/password_reset_screen.dart';
+import 'package:mysub/screen/registration_screen.dart';
 class MySubApp extends StatelessWidget {
 
   const MySubApp({
@@ -17,7 +20,7 @@ class MySubApp extends StatelessWidget {
     return MaterialApp(
       title: 'MySub',
       debugShowCheckedModeBanner: false,
-      home: const LoginScreen(),
+      home: const RegistrationScreen(),
       theme: ThemeData(
         brightness: Brightness.light,
         primaryColor: kPrimaryColor,
@@ -34,6 +37,7 @@ class MySubApp extends StatelessWidget {
           ),
         ),
       ),
+      scrollBehavior: const DefaultScrollBehaviour(),
     );
   }
 }

@@ -1,3 +1,7 @@
+// All Rights Reserved (ARR)
+// Copyright (c) 2022 NotSuitable Group LTD
+// Created by DanikingRD https://github.com/DanikingRD
+
 import 'package:flutter/material.dart';
 import 'package:mysub/constant/colors.dart';
 
