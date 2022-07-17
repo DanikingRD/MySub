@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:mysub/colors.dart';
-import 'package:mysub/primary_button.dart';
-import 'package:mysub/primary_text_field.dart';
+import 'package:mysub/constant/colors.dart';
+import 'package:mysub/widget/primary_button.dart';
+import 'package:mysub/widget/primary_text_field.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen();

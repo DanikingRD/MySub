@@ -3,8 +3,8 @@
 // Created by DanikingRD https://github.com/DanikingRD
 
 import 'package:flutter/material.dart';
-import 'package:mysub/assets_path.dart';
-import 'package:mysub/primary_button.dart';
+import 'package:mysub/constant/assets_path.dart';
+import 'package:mysub/widget/primary_button.dart';
 
 class WelcomeScreen extends StatelessWidget {
   const WelcomeScreen({Key? key}) : super(key: key);

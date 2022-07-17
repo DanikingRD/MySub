@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:mysub/colors.dart';
+import 'package:mysub/constant/colors.dart';
 
 class PrimaryTextField extends StatelessWidget {
   

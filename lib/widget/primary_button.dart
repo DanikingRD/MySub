@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:mysub/colors.dart';
+import 'package:mysub/constant/colors.dart';
 
 /// [PrimaryButton] is the primary button for MySub app.
 /// It is mainly used for registration process.

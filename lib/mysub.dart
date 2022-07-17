@@ -4,8 +4,8 @@
 
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:mysub/colors.dart';
-import 'package:mysub/login_screen.dart';
+import 'package:mysub/constant/colors.dart';
+import 'package:mysub/screen/login_screen.dart';
 class MySubApp extends StatelessWidget {
 
   const MySubApp({
@@ -24,12 +24,12 @@ class MySubApp extends StatelessWidget {
         fontFamily: GoogleFonts.rubik().fontFamily,
         textTheme: TextTheme(
           headlineMedium: GoogleFonts.roboto(
-            color: const Color.fromRGBO(25, 25, 34, 1),
+            color: kDarkColor,
             fontSize: 28,
             fontWeight: FontWeight.w500,
           ),
           bodySmall: GoogleFonts.rubik(
-            color: const Color.fromRGBO(25, 25, 34, 1),
+            color: kDarkColor,
             fontSize: 15,
           ),
         ),
