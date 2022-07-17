@@ -1,5 +1,11 @@
-import 'package:flutter/material.dart';
+// All Rights Reserved (ARR)
+// Copyright (c) 2022 NotSuitable Group LTD
+// Created by DanikingRD https://github.com/DanikingRD
 
+import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:mysub/colors.dart';
+import 'package:mysub/login_screen.dart';
 class MySubApp extends StatelessWidget {
 
   const MySubApp({
@@ -10,16 +16,24 @@ class MySubApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'MySub',
-        debugShowCheckedModeBanner: false,
-        home: Scaffold(
-          appBar: AppBar(
-            title: const Text('MySub'),
-            centerTitle: true,
+      debugShowCheckedModeBanner: false,
+      home: const LoginScreen(),
+      theme: ThemeData(
+        brightness: Brightness.light,
+        primaryColor: kPrimaryColor,
+        fontFamily: GoogleFonts.rubik().fontFamily,
+        textTheme: TextTheme(
+          headlineMedium: GoogleFonts.roboto(
+            color: const Color.fromRGBO(25, 25, 34, 1),
+            fontSize: 28,
+            fontWeight: FontWeight.w500,
           ),
-          body: const Center(
-            child: Text('Work in progress!'),
+          bodySmall: GoogleFonts.rubik(
+            color: const Color.fromRGBO(25, 25, 34, 1),
+            fontSize: 15,
           ),
-        )
+        ),
+      ),
     );
   }
 }
