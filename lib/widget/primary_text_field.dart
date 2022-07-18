@@ -6,7 +6,6 @@ import 'package:flutter/material.dart';
 import 'package:mysub/constant/colors.dart';
 
 class PrimaryTextField extends StatelessWidget {
-  
   final String? label;
   final TextEditingController? controller;
   final TextInputType inputType;
@@ -31,7 +30,7 @@ class PrimaryTextField extends StatelessWidget {
       cursorColor: cursorColor,
       decoration: InputDecoration(
         floatingLabelBehavior: FloatingLabelBehavior.always,
-        labelText: label ,
+        labelText: label,
         focusedBorder: const OutlineInputBorder(
           borderSide: BorderSide(
             color: kPrimaryColor,
@@ -39,7 +38,9 @@ class PrimaryTextField extends StatelessWidget {
           ),
         ),
         enabledBorder: const OutlineInputBorder(
-          borderSide: BorderSide(color: Colors.grey),
+          borderSide: BorderSide(
+            color: Colors.black,
+          ),
         ),
       ),
     );

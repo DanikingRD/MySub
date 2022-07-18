@@ -8,3 +8,4 @@ const EdgeInsets kDefaultPadding = EdgeInsets.symmetric(horizontal: 45);
 const SizedBox kTextFieldLabelMargin = SizedBox(height: 8);
 const SizedBox kHeaderMargin = SizedBox(height: 35);
 const SizedBox kMultiTextFieldGaps = SizedBox(height: 36);
+const SizedBox kDefaultSpacing = SizedBox(height: 24);

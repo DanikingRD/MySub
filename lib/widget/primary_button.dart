@@ -28,6 +28,7 @@ class PrimaryButton extends StatelessWidget {
   /// When Outlined is active, the [bgColor] and [fgColor] passed in will be ignored.
   final bool outlined;
 
+
   const PrimaryButton({
     required this.onPressed,
     required this.title,
@@ -44,7 +45,8 @@ class PrimaryButton extends StatelessWidget {
       onPressed: onPressed,
       style: ButtonStyle(
         splashFactory: NoSplash.splashFactory,
-        overlayColor: MaterialStateProperty.all(outlined ? Colors.grey.shade300 : Colors.black45),
+        overlayColor: MaterialStateProperty.all(
+            outlined ? Colors.grey.shade300 : Colors.black45),
         backgroundColor: MaterialStateProperty.all(
           outlined ? Colors.white : bgColor,
         ),
@@ -55,7 +57,9 @@ class PrimaryButton extends StatelessWidget {
         ),
         side: outlined
             ? MaterialStateProperty.all(
-                const BorderSide(color: Colors.black),
+                const BorderSide(
+                  color: Colors.black,
+                ),
               )
             : null,
       ),
@@ -63,7 +67,9 @@ class PrimaryButton extends StatelessWidget {
         padding: padding,
         child: Text(
           title,
-          style: TextStyle(color: outlined ? Colors.black : fgColor),
+          style: Theme.of(context).textTheme.bodySmall!.copyWith(
+            color: outlined ? Colors.black : fgColor
+          ),
         ),
       ),
     );
